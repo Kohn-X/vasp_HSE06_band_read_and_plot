@@ -58,7 +58,7 @@ soc=0           # 0:nosoc and non-spinolarized; 1:soc; -1:spin-polarized
 kstart=16       # start kpoints
 eigs=eigenread(path,soc)[kstart:,:]
 nelect=8
-eigs=eigs-max(eigs[:,int(8/2)])     ### set VBM to zero
+eigs=eigs-max(eigs[:,int(8/2)-1])     ### set VBM to zero
 print(eigs.shape)
 xpts=kptsread(path,kstart)
 print(xpts.shape)

@@ -56,7 +56,7 @@ def PlotEband(ax,path1,low,high,xticknum,xtickname,yticknum,ytickname,ylabel,tit
 
 ###=============================================
 fig = plt.figure(figsize=(6,6))
-ax = fig.add_axes([0.15,0.1,0.7,0.8])
+ax = fig.add_axes([0.20,0.1,0.7,0.8])
 
 path1='./'
 
@@ -70,7 +70,7 @@ ylabel = 'E$\minus$E$_\mathrm{F}$ (eV)'
 xticknum = [0,20,40,59]
 xtickname = ['L','$\Gamma$','X','U']
 
-title='HSE06 band for Si'
+title='HSE06 band (Si)'
 
 PlotEband(ax,path1,low,high,xticknum,xtickname,yticknum,ytickname,ylabel,title)
 
